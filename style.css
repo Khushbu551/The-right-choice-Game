@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: "poppings", sans-serif;
+  height: 100vh;
+  background: url(image/bg.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Game-container */
+.game-container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Game Title */
+.game-title {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+/*  Start btn */
+.start-btn {
+  font-size: 1.5rem;
+  color: white;
+  background: linear-gradient(145deg, #222 0%, #444 100%);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px #111, -3px -3px 8px #555;
+  transition: all 0.3 ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 12px #111, -6px -6px 12px #555;
+}
+
+/* Main Game Interface */
+.game-interface {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Scoreboard style */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px 0;
+  text-align: center;
+}
+.scoreboard p {
+  margin: 0;
+}
+
+/* Timer, Score, & Attempts Display */
+.time,
+.score,
+.attempts {
+  margin: 0.5rem 0;
+}
+
+/* Number options (50% 50%) */
+.number-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.number-btn {
+  font-size: 3rem;
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #222, #444);
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-shadow: 4px 4px 8px #111, -4px -4px 8px #555;
+  transition: all 0.2s ease;
+  pointer-events: auto;
+  z-index: 1;
+}
+.number-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 12px #111, -6px -6px 12px #555;
+}
+
+/* Feedback Message */
+.feedback {
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-shadow: 0 0 19px white;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
