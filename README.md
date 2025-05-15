@@ -27,6 +27,8 @@
 **Interactive Feedback** - Shows correct/wrong choice
 **Lightweight & Fast** - Runs without backend
 
+**Note:** THis project was built for learning purposes to explore and practice [mention technologies]. Security and production-level optimizations are not the primary focus.
+
 ## Preview
 
 ![The Right Choice](/image/pic.png)
